@@ -2,8 +2,9 @@
   box-sizing: border-box;
 }
 :root{
-  --mainColor: red;
+  --mainColor:rgba(24, 12, 41, 0.7);
   --secondColor: rgb(69, 151, 165);
+  --borRad: 6px;
 }
 
 body {
@@ -15,6 +16,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--secondColor);
+  font-size: 180%
+}
+a:hover{
+  color: rgb(146, 231, 247) ;
 }
 header {
   display: flex;
@@ -24,10 +30,11 @@ header {
 
 header nav{
   width: fit-content;
-  flex-basis: 20%;
+  flex-basis: 30%;
 	flex-grow: 0;
 	flex-shrink: 0;
-  padding-top: 1%;
+  padding-top: 5%;
+  text-align: center;
 }
 header nav li {
   display: inline;
@@ -41,31 +48,47 @@ header a {
 .hero-banner {
   background-image: url(../images/hero.jpg);
   height: 300px;
+  border: 10px var(--mainColor) solid;
+  border-radius: var(--borRad);
 }
 h1{
-  background-color: aliceblue;
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  font-size: 400%;
+  padding: 1%;
+  margin-bottom: 0.5%;
+  border-radius: var(--borRad);
+}
+h1:hover {
+  background-color:  rgb(69, 151, 165, 0.3);
 }
   
 h2 {
-  background-color: aliceblue;
+  background-color: var(--mainColor);
   float: right;
   width: 20%;
-  margin-top: 12%;
+  margin-top: 10%;
   margin-right: 4%;
   padding: 1%;
+  color: var(--secondColor);
+  border-radius: var(--borRad);
 }
 
 #page {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: fit-content fit-content fit-content;
+  justify-content: center;
+}
+#about p{
+  color:var(--secondColor)
 }
 #work-links {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60% 20% 20% ;
-  height: 700px;
+  height: 800px;
   grid-template-areas:"link1 link1"
 
                       "link2 link3"
@@ -73,32 +96,57 @@ h2 {
 }
 
 .links {
-  margin: 2%;
+  margin: 1% 2%;;
   padding: 3%;
   border: 4px solid var(--secondColor);
+  border-radius: var(--borRad);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
 .name {
   background-color: var(--secondColor) ;
   width: 40%;
-  height: auto;
+  height: fit-content;
   float: left;
   margin-left: -3.5%;
   margin-top: 2%;
+  border-radius: var(--borRad)
 
 }
+
 h3 {
  color: var(--secondColor);
+ font-size: 250%;
+ text-align: right;
+ padding-right: 5%;
 }
 h4, p {
   margin: 0%;
   padding: 0%;
+  font-size: 120%;
+}
+.name a{
+  color: var(--mainColor);
+  font-size: 90%;
+}
+.name a:hover{
+  color:rgb(146, 231, 247);
+  background-color: var(--mainColor);
 }
 
+.links:hover {
+  background-color: blue;
+  z-index: 100;
+}
 
 #link1 {
   grid-area: link1 ;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/CSSsnippets.png);
+
 }
 #link1 .name{
   margin-top: 20%;
@@ -106,12 +154,12 @@ h4, p {
 
 #link2{
   grid-area: link2;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/horiseon.png);
 }
 
 #link3{
   grid-area: link3;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/Prework.png);
 }
 
 #link4{
@@ -134,8 +182,10 @@ h4, p {
   margin: 1%;
   padding: 5% 1%;
   border-left: 2px solid var(--secondColor);
-  width: 100%;
-  margin-left: -15%;
+  width: 110%;
+  margin-left: -10%;
+  padding-left: 5%;
+  justify-self: center;
 }
 
 #contact ul{
@@ -148,3 +198,4 @@ h4, p {
   justify-content: space-evenly;
   text-decoration: none;
 }
+
