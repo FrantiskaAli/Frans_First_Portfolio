@@ -64,9 +64,8 @@ h1{
 h2 {
   background-color: var(--mainColor);
   float: right;
-  width: 20%;
-  margin-top: 10%;
-  margin-right: 4%;
+  width: 30%;
+  margin: 10% 1% 0% 4%;
   padding: 1%;
   color: var(--secondColor);
   border-radius: var(--borRad);
@@ -91,7 +90,7 @@ h3 {  /*left side headers font*/
  font-weight: bolder;
  }
 .right {      /*for right column of page grid*/
-  margin: 1%;
+  margin: 3%;
   padding: 5% 5%;
   border-left: 2px solid var(--secondColor);
   width: 110%;
@@ -131,7 +130,6 @@ h3 {  /*left side headers font*/
   width: 100%;
   margin:0%;
   padding: 0%;
-  border-radius: var(--borRad);
   position: relative;
   z-index: 1;
 }
@@ -142,25 +140,26 @@ h3 {  /*left side headers font*/
   width: 40%;
   height: fit-content;
   float: left;
-  margin: -13% 0% 0% 0%;
-  border-radius: var(--borRad);
+  margin: -14% 0% 0% 0%;
+  border-radius: 0 var(--borRad) var(--borRad) 0;
   position: relative;
   z-index: 100;
   line-height: 1;
-  border: solid 3px var(--mainColor);
-
+  border: solid 2px var(--mainColor);
+  border-left: none;
 }
 
 
 h4 {  /*titles on the card font*/
   margin: 5% 0 0 0;
   font-size: 110%;
+  color: rgba(24, 12, 41, 0.8)
 }
 .name p {   /*titles on the card font*/
   font-size: smaller;
   font-weight: lighter;
   margin-top: 1px;
-  color: var(--mainColor);
+  color: rgba(24, 12, 41, 0.6);
 }
 
 #link1 .name{ /*some extra rules for title of main link as it is bigger in size*/
