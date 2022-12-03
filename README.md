@@ -7,5 +7,10 @@ This website is my personal portfolio displaying my latest projects. It has been
 This website contains links to visit my other deployed websites and contact informations are available on click as well.
 
 ## Screenshot
+![Screenshot of finishe web](images/Screenshot.png)
 
-## Deployed website link
+## Link
+[HERE](https://frantiskaali.github.io/Frans_First_Portfolio/) is link to my deployed application.
+
+## Credits
+Frantiska Rechkova
