@@ -82,6 +82,14 @@ h2 {
   padding: 5% 1%;
   margin-left: 5%;
 }
+.left img{ /*sizing of my avatar*/
+  height: 40%;
+  width: 45%;
+  float: right;
+  border-left: 3px solid var(--secondColor);
+  border-bottom: 3px solid var(--secondColor);
+  border-radius: var(--borRad);
+}
 
 h3 {  /*left side headers font*/
   color: var(--secondColor);
