@@ -59,6 +59,8 @@ h1{
   height: 300px;
   border: 10px var(--mainColor) solid;
   border-radius: var(--borRad);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -181,6 +183,7 @@ h4 {  /*titles on the card font*/
 #link1 .name{ /*some extra rules for title of main link as it is bigger in size*/
   padding: 2% 0% 2% 0%;
   font-size: larger;
+  margin-left: -0.18%;
 }
 
 
