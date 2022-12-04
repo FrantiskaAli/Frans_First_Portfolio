@@ -223,7 +223,7 @@ h4 {  /*titles on the card font*/
 }
 /*mobile number display on hover*/
 #mobile:hover:before {
-  content: "0 7950 22 3553";
+  content: "0 7950 22 3552";
   color:rgb(146, 231, 247);
   font-size: 170%;
 }
